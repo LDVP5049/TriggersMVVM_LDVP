@@ -49,7 +49,7 @@ namespace TriggersMVVM_LDVP.VistaModelo
                 .ToList()
                 .FindIndex(p => p.descripcion == modelo.descripcion);
             Imagen = modelo.imagen;
-            if (index > -1)
+            if (index >- 1)
             {
                 Deseleccionar();
                 ActivadorAnimacionImg = true;
@@ -75,7 +75,6 @@ namespace TriggersMVVM_LDVP.VistaModelo
         }
         public void MostrarCategorias()
         {
-            //Para agarrar todos los datos
             ListaCategorias = new ObservableCollection<Mcategorias>(Datos.Dcategorias.MostrarCategorias());
         }
         #endregion
